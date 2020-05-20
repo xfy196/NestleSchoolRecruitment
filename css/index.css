@@ -1,0 +1,228 @@
+.container {
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  position: relative;
+}
+.content {
+  height: 100%;
+  position: relative;
+}
+.swiper-container {
+  height: 100%;
+}
+.swiper-slide {
+  position: relative;
+  height: 100%;
+}
+.swiper-slide:nth-of-type(2) {
+  background-color: #fe657a;
+}
+.slide-wrapper {
+  width: 100%;
+  height: 100%;
+  animation-fill-mode: both;
+  overflow: hidden;
+}
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.music-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 50px;
+  background: url("../img/musicBtn.png") no-repeat center center;
+  z-index: 999;
+}
+.xy_c {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+.page_index .txt .abs {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.abs {
+    animation-fill-mode: both;
+}
+img {
+    animation-fill-mode: both;
+}
+.page_index .snacky {
+  z-index: 1;
+  margin-top: 12%;
+}
+
+/* 动画的一些css */
+.delay_500ms {
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+}
+
+.delay_800ms {
+  -webkit-animation-delay: 800ms;
+  animation-delay: 800ms;
+}
+.delay_1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.delay_1100ms {
+  -webkit-animation-delay: 1100ms;
+  animation-delay: 1100ms;
+}
+.delay_1200ms {
+  -webkit-animation-delay: 1200ms;
+  animation-delay: 1200ms;
+}
+.delay_1300ms {
+  -webkit-animation-delay: 1300ms;
+  animation-delay: 1300ms;
+}
+.delay_1400ms {
+  -webkit-animation-delay: 1400ms;
+  animation-delay: 1400ms;
+}
+.delay_1500ms {
+  -webkit-animation-delay: 1500ms;
+  animation-delay: 1500ms;
+}
+.delay_1600ms {
+  -webkit-animation-delay: 1600ms;
+  animation-delay: 1600ms;
+}
+.delay_1700ms {
+  -webkit-animation-delay: 1600ms;
+  animation-delay: 1600ms;
+}
+.delay_1800ms {
+  -webkit-animation-delay: 1600ms;
+  animation-delay: 1600ms;
+}
+.page_index .house {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.bgmove {
+  animation: bgmove 30s linear;
+}
+@keyframes bgmove {
+  form {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.bgmove0 {
+  left: -100%;
+  animation: bgmove0 30s linear;
+}
+@keyframes bgmove0 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.up-arrow {
+  width: 38px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  padding-bottom: 10%;
+  z-index: 3;
+  opacity: 0.8;
+}
+.up-arrow img {
+  width: 100%;
+  animation: upArrow 1.5s infinite ease-in-out;
+}
+@keyframes upArrow {
+  0% {
+    margin-bottom: -15px;
+    opacity: 0;
+  }
+}
+
+/* 第二张的css */
+.txtbox {
+    height: 100%;
+}
+.txtbox .txtLeft {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 9;
+}
+.txtbox .txtRight {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  z-index: 9;
+}
+.txtbox .txtLeft .abs,
+.txtbox .txtRight .abs {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.roleBox {
+  position: relative;
+  float: right;
+  z-index: 1;
+}
+.roleBox .star {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.txtbox .lights {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.roleBox .twinkle {
+  animation: twinkle 1.5s infinite linear;
+}
+@keyframes twinkle {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.4;
+  }
+}
+@media only screen and (device-height: 667px) and (device-width: 375px) {
+  .roleBox {
+      top: 5%;
+  }
+}
+
+
+/* 第三个 */
+.swiper-slide:nth-of-type(3){
+    background: #09bee3;
+}
