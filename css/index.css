@@ -27,6 +27,7 @@
   position: absolute;
   top: 15px;
   left: 15px;
+  animation-fill-mode: both;
 }
 .music-btn {
   position: absolute;
@@ -34,7 +35,11 @@
   top: 0;
   padding: 50px;
   background: url("../img/musicBtn.png") no-repeat center center;
-  z-index: 999;
+  z-index: 5;
+}
+.music-btn.off {
+  background: url("../img/musicBtnOff.png") no-repeat center center;
+
 }
 .xy_c {
   position: absolute;
@@ -49,10 +54,10 @@
   left: 0;
 }
 .abs {
-    animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 img {
-    animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 .page_index .snacky {
   z-index: 1;
@@ -165,7 +170,7 @@ img {
 
 /* 第二张的css */
 .txtbox {
-    height: 100%;
+  height: 100%;
 }
 .txtbox .txtLeft {
   position: absolute;
@@ -201,7 +206,7 @@ img {
   top: 0;
   right: 0;
 }
-.roleBox .twinkle {
+.twinkle {
   animation: twinkle 1.5s infinite linear;
 }
 @keyframes twinkle {
@@ -217,12 +222,191 @@ img {
 }
 @media only screen and (device-height: 667px) and (device-width: 375px) {
   .roleBox {
-      top: 5%;
+    top: 5%;
   }
 }
 
-
 /* 第三个 */
-.swiper-slide:nth-of-type(3){
-    background: #09bee3;
+.swiper-slide:nth-of-type(3) {
+  background: #09bee3;
+}
+.swiper-slide:nth-of-type(3) .roleBox {
+  float: left;
+}
+.swiper-slide:nth-of-type(3) .txtLeft > img:first-of-type {
+  animation-name: fadeInBig;
+}
+
+@keyframes fadeInBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    -ms-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+/* 第四页面 */
+.swiper-slide:nth-of-type(4) {
+  overflow: hidden;
+  background: #36a15c;
+}
+.slide_fix .role {
+  position: relative;
+}
+.slide_fix .role_dog,
+.slide_fix .pickme,
+.slide_fix .btn_dog,
+.slide_fix .lights_dog,
+.slide_fix .lights_cat {
+  z-index: 9;
+}
+.slide_fix .abs {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slide_fix .btn-notice {
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+}
+.slide_fix .btn-notice .you {
+  text-align: center;
+  width: 100%;
+}
+.qqbounce {
+  -webkit-animation-name: qqbounce;
+  animation-name: qqbounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes qqbounce {
+  0%,
+  50%,
+  75%,
+  85%,
+  100% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-7px);
+  }
+}
+
+/* 第五屏 */
+.swiper-slide:nth-of-type(5) {
+  background-color: #669cff;
+  width: 100%;
+  height: 100%;
+}
+.slide-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.slide_summer .txt {
+  text-align: center;
+  padding: 14% 0 0;
+}
+.slide_summer .titles {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+}
+.slide_summer .titles div {
+  position: absolute;
+}
+.ani {
+  animation-fill-mode: both;
+}
+
+/* 第六个 */
+.slide_end .txt {
+  font-size: 50px;
+  color: #669cff;
+  font-weight: bold;
+  text-align: center;
+  margin: 20% auto;
+}
+.slide_end .searchbox {
+  border: solid 1px #959ba0;
+  overflow: hidden;
+  margin: 0 15%;
+  padding: 6px;
+  position: relative;
+}
+.slide_end .keywords {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+.slide_end .btn_search {
+  background: url(../img/iconsZoom.png) 50% 50% no-repeat #669cff;
+  height: 100%;
+  width: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.searchbox .layer {
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+.searchbox .fadeOutRightBig{
+  animation: fadeOutRightBig 5s 800ms linear;
+  animation-fill-mode: both;
+  opacity: 0;
+}
+@keyframes fadeOutRightBig {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0);
+  }
+}
+.btn_search.click {
+  animation: click 200ms 1.7s linear;
+  animation-fill-mode: both;
+}
+
+@keyframes click {
+  0%, 100% {
+    background-color: #669cff;
+  }
+  50% {
+    background-color: #386ccb;
+  }
+}
+.slide_end .btnbox {
+  position: absolute;
+  bottom: 12%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+.slide_end .btnbox .btns {
+  width: 100%;
+}
+.slide_end .btnbox .btns a {
+  display: inline-block;
+  width: auto;
+  margin: 16px;
 }

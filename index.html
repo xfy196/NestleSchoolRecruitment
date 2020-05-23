@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
     <meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
     <title>“巢”人初体验-雀巢2015实习生招募启动啦！</title>
     <link rel="stylesheet" href="./lib/swiper/dist/css/swiper.min.css">
@@ -16,29 +19,41 @@
     <div class="container">
         <div class="content">
             <div class="swiper-container">
-                <div class="music-btn active"></div>
+                <div id="music-btn" class="music-btn">
+                    <audio id="bgmusic">
+                        <source src="./music/music.mp3">
+                    </audio>
+                </div>
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" >
-                        <div class="slide-wrapper page_index ani" swiper-animate-effect="animate__fadeIn" swiper-animate-duration="2s" swiper-animate-delay="0s" >
-                            <h1 class="logo animate__animated animate__fadeIn"><img src="./img/logo_gray.png" alt="雀巢"></h1>
+                    <div class="swiper-slide">
+                        <div class="slide-wrapper page_index ani" swiper-animate-effect="animate__fadeIn"
+                            swiper-animate-duration="2s" swiper-animate-delay="0s">
+                            <h1 class="logo animate__animated animate__fadeIn"><img src="./img/logo_gray.png" alt="雀巢">
+                            </h1>
                             <div class="xy_c txt">
                                 <img src="./img/indexTxt.png" alt="" style="visibility: hidden;">
-                                <div class="abs ani" swiper-animate-effect="animate__zoomIn" swiper-animate-duration="2s" swiper-animate-delay="0.5s">
+                                <div class="abs ani" swiper-animate-effect="animate__zoomIn"
+                                    swiper-animate-duration="2s" swiper-animate-delay="0.5s">
                                     <img src="./img/indexTxtThereis.png" alt="">
                                 </div>
-                                <div class="abs ani" swiper-animate-effect="animate__zoomIn" swiper-animate-duration="2s" swiper-animate-delay="0.8s">
+                                <div class="abs ani" swiper-animate-effect="animate__zoomIn"
+                                    swiper-animate-duration="2s" swiper-animate-delay="0.8s">
                                     <img src="./img/indexTxtLife.png" alt="">
                                 </div>
-                                <div class="abs ani" swiper-animate-effect="animate__zoomIn" swiper-animate-duration="2s" swiper-animate-delay="1s">
+                                <div class="abs ani" swiper-animate-effect="animate__zoomIn"
+                                    swiper-animate-duration="2s" swiper-animate-delay="1s">
                                     <img src="./img/indexTxtMoreTo.png" alt="">
                                 </div>
-                                <div class="abs ani" swiper-animate-effect="animate__zoomIn" swiper-animate-duration="2s" swiper-animate-delay="1.1s">
+                                <div class="abs ani" swiper-animate-effect="animate__zoomIn"
+                                    swiper-animate-duration="2s" swiper-animate-delay="1.1s">
                                     <img src="./img/indexTxtNestle.png" alt="">
                                 </div>
-                                <div class="abs ani" swiper-animate-effect="animate__zoomIn" swiper-animate-duration="2s" swiper-animate-delay="1.3s">
+                                <div class="abs ani" swiper-animate-effect="animate__zoomIn"
+                                    swiper-animate-duration="2s" swiper-animate-delay="1.3s">
                                     <img src="./img/indexTxtCnLife.png" alt="">
                                 </div>
-                                <div class="abs ani" swiper-animate-effect="animate__zoomIn" swiper-animate-duration="2s" swiper-animate-delay="1.5s">
+                                <div class="abs ani" swiper-animate-effect="animate__zoomIn"
+                                    swiper-animate-duration="2s" swiper-animate-delay="1.5s">
                                     <img src="./img/indexTxtCnNestle.png" alt="">
                                 </div>
                             </div>
@@ -60,39 +75,251 @@
 
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide-wrapper page_index ani" swiper-animate-effect="animate__fadeIn" swiper-animate-duration="2s" swiper-animate-delay="0s">
+                        <div class="slide-wrapper page_index ani" swiper-animate-effect="animate__fadeIn"
+                            swiper-animate-duration="2s" swiper-animate-delay="0s">
                             <div class="txtbox">
                                 <div class="txtLeft">
-                                    <img class="abs ani" src="./img/selerTxtLeft01.png" alt="" swiper-animate-effect="animate__bounceInLeft" swiper-animate-duration="2s"  swiper-animate-delay="1s">
-                                    <img class="abs ani" src="./img/selerTxtLeft02.png" alt="" swiper-animate-effect="animate__bounceInLeft" swiper-animate-duration="2s"  swiper-animate-delay="1.2s">
-                                    <img class="abs ani" src="./img/selerTxtLeft03.png" alt="" swiper-animate-effect="animate__bounceInLeft" swiper-animate-duration="2s"  swiper-animate-delay="1.4s">
-                                    <img class="abs ani" src="./img/selerTxtLeft04.png" alt="" swiper-animate-effect="animate__bounceInLeft" swiper-animate-duration="2s"  swiper-animate-delay="1.6s">
+                                    <img class="abs ani" src="./img/selerTxtLeft01.png" alt=""
+                                        swiper-animate-effect="animate__bounceInLeft" swiper-animate-duration="2s"
+                                        swiper-animate-delay="1s">
+                                    <img class="abs ani" src="./img/selerTxtLeft02.png" alt=""
+                                        swiper-animate-effect="animate__bounceInLeft" swiper-animate-duration="2s"
+                                        swiper-animate-delay="1.2s">
+                                    <img class="abs ani" src="./img/selerTxtLeft03.png" alt=""
+                                        swiper-animate-effect="animate__bounceInLeft" swiper-animate-duration="2s"
+                                        swiper-animate-delay="1.4s">
+                                    <img class="abs ani" src="./img/selerTxtLeft04.png" alt=""
+                                        swiper-animate-effect="animate__bounceInLeft" swiper-animate-duration="2s"
+                                        swiper-animate-delay="1.6s">
                                 </div>
                                 <div class="txtRight">
-                                    <img class="ani" src="./img/selerTxtRight.png" alt="" swiper-animate-effect="animate__bounceInRight" swiper-animate-duration="2s"  swiper-animate-delay="0.8s">
+                                    <img class="ani" src="./img/selerTxtRight.png" alt=""
+                                        swiper-animate-effect="animate__bounceInRight" swiper-animate-duration="2s"
+                                        swiper-animate-delay="0.8s">
                                     <div class="me abs ani" swiper-animate-effect="animate__zoomIn">
                                         <img src="./img/selerTxtRightMe.png" alt="">
                                     </div>
-                                    <div class="abs title ani" swiper-animate-effect="animate__zoomIn" swiper-animate-duration="2s"  swiper-animate-delay="0.5s">
+                                    <div class="abs title ani" swiper-animate-effect="animate__zoomIn"
+                                        swiper-animate-duration="2s" swiper-animate-delay="0.5s">
                                         <img src="./img/selerTxtRightTitle.png" alt="">
                                     </div>
                                 </div>
                                 <div class="roleBox">
-                                    <div class="role abs ani" swiper-animate-effect="animate__bounceInDown" swiper-animate-duration="2s"  swiper-animate-delay="0.5s">
+                                    <div class="role abs ani" swiper-animate-effect="animate__bounceInDown"
+                                        swiper-animate-duration="2s" swiper-animate-delay="0.5s">
                                         <img src="./img/boy.gif" alt="销售王">
                                     </div>
-                                    <div class="lights abs ani" swiper-animate-effect="animate__fadeIn" swiper-animate-duration="2s"  swiper-animate-delay="1s">
-                                        <img src="./img/lightsRight.png" class="twinkle" alt=""  swiper-animate-effect="twinkle" swiper-animate-duration="2s" swiper-animate-delay="1.5s">
+                                    <div class="lights abs ani" swiper-animate-effect="animate__fadeIn"
+                                        swiper-animate-duration="2s" swiper-animate-delay="1s">
+                                        <img src="./img/lightsRight.png" class="twinkle" alt=""
+                                            swiper-animate-effect="twinkle" swiper-animate-duration="2s"
+                                            swiper-animate-delay="1.5s">
                                     </div>
-                                    <div class="star abs ani" swiper-animate-effect="animate__fadeIn" swiper-animate-duration="2s"  swiper-animate-delay="1s">
-                                        <img src="./img/starsRight.png" class="ani" alt="" swiper-animate-effect="twinkle" swiper-animate-duration="2s"  swiper-animate-delay="1.7s">
+                                    <div class="star abs ani" swiper-animate-effect="animate__fadeIn"
+                                        swiper-animate-duration="2s" swiper-animate-delay="1s">
+                                        <img src="./img/starsRight.png" class="ani" alt=""
+                                            swiper-animate-effect="twinkle" swiper-animate-duration="2s"
+                                            swiper-animate-delay="1.7s">
                                     </div>
                                 </div>
+                            </div>
+                            <div class="up-arrow" style="bottom: -45px;">
+                                <a href="javascript:void(0)">
+                                    <img src="./img/arrow-up.png" alt="滑动提示">
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide-wrapper"></div>
+                        <div class="slide-wrapper page_index ani" swiper-animate-effect="animate__fadeIn"
+                            swiper-animate-duration="2s" swiper-animate-delay="0s">
+                            <div class="txtbox">
+                                <div class="txtLeft">
+                                    <img class="abs ani" src="./img/marketTxtLeft.png" alt=""
+                                        swiper-animate-effect="fadeInBig" swiper-animate-duration="2s"
+                                        swiper-animate-delay="0.9s">
+                                    <img class="abs ani" src="./img/selerTxtRightMe.png" alt=""
+                                        swiper-animate-effect="animate__zoomIn" swiper-animate-duration="2s"
+                                        swiper-animate-delay="0s">
+                                    <img class="abs ani" src="./img/marketTxtLeftTitle.png" alt=""
+                                        swiper-animate-effect="animate__zoomIn" swiper-animate-duration="2s"
+                                        swiper-animate-delay="0.5s">
+                                </div>
+                                <div class="txtRight">
+                                    <img class="ani" src="./img/marketTxtRight01.png" alt=""
+                                        swiper-animate-effect="animate__bounceInRight" swiper-animate-duration="2s"
+                                        swiper-animate-delay="1s">
+                                    <img class="ani abs" src="./img/marketTxtRight02.png" alt=""
+                                        swiper-animate-effect="animate__bounceInRight" swiper-animate-duration="2s"
+                                        swiper-animate-delay="1.4s">
+                                    <img class="ani abs" src="./img/marketTxtRight03.png" alt=""
+                                        swiper-animate-effect="animate__bounceInRight" swiper-animate-duration="2s"
+                                        swiper-animate-delay="1.2s">
+                                    <img class="ani abs" src="./img/marketTxtRight04.png" alt=""
+                                        swiper-animate-effect="animate__bounceInRight" swiper-animate-duration="2s"
+                                        swiper-animate-delay="1s">
+                                </div>
+                                <div class="roleBox">
+                                    <div class="role abs ani" swiper-animate-effect="animate__bounceInDown"
+                                        swiper-animate-duration="2s" swiper-animate-delay="0.5s">
+                                        <img src="./img/girl.gif" alt="市场喵">
+                                    </div>
+                                    <div class="lights abs ani" swiper-animate-effect="animate__fadeIn"
+                                        swiper-animate-duration="2s" swiper-animate-delay="1s">
+                                        <img src="./img/lightsLeft.png" class="twinkle" alt=""
+                                            swiper-animate-effect="twinkle" swiper-animate-duration="2s"
+                                            swiper-animate-delay="1.5s">
+                                    </div>
+                                    <div class="star abs ani" swiper-animate-effect="animate__fadeIn"
+                                        swiper-animate-duration="2s" swiper-animate-delay="1s">
+                                        <img src="./img/starsLeft.png" class="ani" alt=""
+                                            swiper-animate-effect="twinkle" swiper-animate-duration="2s"
+                                            swiper-animate-delay="1.7s">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="up-arrow" style="bottom: -45px;">
+                                <a href="javascript:void(0)">
+                                    <img src="./img/arrow-up.png" alt="滑动提示">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第四个 -->
+                    <div class="swiper-slide">
+                        <div class="slide-wrapper slide_fix">
+                            <div class="role role_dog ani" swiper-animate-effect="animate__bounceIn"
+                                swiper-animate-duration="2s" swiper-animate-delay="0s">
+                                <img src="./img/dogFix.gif" alt="销售大师">
+                            </div>
+                            <div class="abs pickme txt_dog ani" swiper-animate-effect="animate__fadeIn"
+                                swiper-animate-duration="2s" swiper-animate-delay="0.5s">
+                                <img src="./img/FixDogTxt.png" alt="销售大师-选我">
+                            </div>
+                            <div class="abs btn_dog ani" swiper-animate-effect="animate__fadeInLeft"
+                                swiper-animate-duration="1s" swiper-animate-delay="0.9s">
+                                <img src="./img/FixDogBtn.png" alt="">
+                            </div>
+
+                            <div class="abs lights_dog ani" swiper-animate-effect="animate__fadeIn"
+                                swiper-animate-duration="1s" swiper-animate-delay="1.3s">
+                                <img src="./img/FixDogLight.png" class="twinkle" alt="" swiper-animate-effect="twinkle"
+                                    swiper-animate-duration="2s" swiper-animate-delay="1.5s">
+                            </div>
+
+                            <div class="role abs role_cat ani" swiper-animate-effect="animate__bounceIn"
+                                swiper-animate-duration="2s" swiper-animate-delay="0.2s">
+                                <img src="./img/catFix.gif" alt="销售大师">
+                            </div>
+                            <div class="abs pickme txt_cat ani" swiper-animate-effect="animate__fadeIn"
+                                swiper-animate-duration="2s" swiper-animate-delay="0.6s">
+                                <img src="./img/FixCatTxt.png" alt="销售大师-选我">
+                            </div>
+                            <div class="abs btn_cat ani" swiper-animate-effect="animate__fadeInRight"
+                                swiper-animate-duration="2s" swiper-animate-delay="0.8s">
+                                <img src="./img/FixCatBtn.png" alt="成为市场奇才">
+                            </div>
+                            <div class="abs lights_cat ani" swiper-animate-effect="animate__fadeIn"
+                                swiper-animate-duration="2s" swiper-animate-delay="1.5s">
+                                <img src="./img/FixCatLight.png" class="twinkle" alt="市场奇才-灯光">
+                            </div>\
+                            <div class="btn-notice ani" style="animation-fill-mode: both;"
+                                swiper-animate-effect="animate__fadeIn" swiper-animate-duration="2s"
+                                swiper-animate-delay="1.9s">
+                                <div class="txt">
+                                    <img src="./img/FixArrowTxt.png" alt="">
+                                </div>
+                                <div class="abs you">
+                                    <img src="./img/FixArrowTxtYou.png" class="qqbounce" alt="">
+                                </div>
+                            </div>
+                            <div class="up-arrow" style="bottom: -45px;">
+                                <a href="javascript:void(0)">
+                                    <img src="./img/arrow-up.png" alt="滑动提示">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 第五屏 -->
+                    <div class="swiper-slide">
+                        <div class="slide-wrapper slide_summer">
+                            <div class="txt summer ani" style="animation-fill-mode: both;"
+                                swiper-animate-effect="animate__fadeIn" swiper-animate-duration="1s"
+                                swiper-animate-delay="0s">
+                                <img src="./img/titlesAcoreSummer.png" alt="">
+                            </div>
+                            <div class="txt dots ani" style="animation-fill-mode: both;"
+                                swiper-animate-effect="animate__fadeIn" swiper-animate-duration="1s"
+                                swiper-animate-delay="0.4s">
+                                <img src="./img/titlesDots.png" alt="">
+                            </div>
+                            <div class="titles">
+                                <div class="ani" swiper-animate-effect="animate__bounceInDown"
+                                    swiper-animate-duration="1s" swiper-animate-delay="1.5s"><img
+                                        src="./img/jobTitle01.png" alt=""></div>
+                                <div class="ani" swiper-animate-effect="animate__bounceInDown"
+                                    swiper-animate-duration="1s" swiper-animate-delay="1.4s"><img
+                                        src="./img/jobTitle02.png" alt=""></div>
+                                <div class="ani" swiper-animate-effect="animate__bounceInDown"
+                                    swiper-animate-duration="1s" swiper-animate-delay="1.3s"><img
+                                        src="./img/jobTitle03.png" alt=""></div>
+                                <div class="ani" swiper-animate-effect="animate__bounceInDown"
+                                    swiper-animate-duration="1s" swiper-animate-delay="1.2s"><img
+                                        src="./img/jobTitle04.png" alt=""></div>
+                                <div class="ani" swiper-animate-effect="animate__bounceInDown"
+                                    swiper-animate-duration="1s" swiper-animate-delay="1.1s"><img
+                                        src="./img/jobTitle05.png" alt=""></div>
+                                <div class="ani" swiper-animate-effect="animate__bounceInDown"
+                                    swiper-animate-duration="1s" swiper-animate-delay="1s"><img
+                                        src="./img/jobTitle06.png" alt=""></div>
+                                <div class="ani" swiper-animate-effect="animate__bounceInDown"
+                                    swiper-animate-duration="1s" swiper-animate-delay="0.9s"><img
+                                        src="./img/jobTitle07.png" alt=""></div>
+                                <div class="ani" swiper-animate-effect="animate__bounceInDown"
+                                    swiper-animate-duration="1s" swiper-animate-delay="0.8s"><img
+                                        src="./img/jobTitle08.png" alt=""></div>
+                            </div>
+                            <div class="up-arrow" style="bottom: -45px;">
+                                <a href="javascript:void(0)">
+                                    <img src="./img/arrow-up.png" alt="滑动提示">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 第六屏 -->
+                    <div class="swiper-slide">
+                        <div class="slide-wrapper slide_end">
+                            <h1 class="logo ani" swiper-animate-effect="animate__fadeIn" swiper-animate-duration="1s"
+                                swiper-animate-delay="0s"><img src="./img/logo_gray.png" alt="雀巢"></h1>
+                            <div class="txt ani" swiper-animate-effect="animate__fadeIn" swiper-animate-duration="1s"
+                                swiper-animate-delay="0.2s">
+                                <img src="./img/endTxt2015.jpg" alt="">
+                            </div>
+                            <div class="searchbox ani" swiper-animate-effect="animate__fadeIn"
+                                swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+                                <div class="keywords">
+                                    <img src="./img/searchTxt.png" alt="">
+                                    <div class="layer ani" swiper-animate-effect="fadeOutRightBig"
+                                        swiper-animate-duration="5s" swiper-animate-delay="0.8s"></div>
+                                </div>
+                                <div class="btn_search ani" swiper-animate-effect="click" swiper-animate-duration="0.2s"
+                                    swiper-animate-delay="1.7s"></div>
+                            </div>
+
+                            <div class="btnbox ani" swiper-animate-effect="animate__fadeIn" swiper-animate-duration="1s"
+                                swiper-animate-delay="2s">
+                                <img src="./img/endBtnGuide.png" alt="">
+                                <div class="btns">
+                                    <a
+                                        href="http://mp.weixin.qq.com/s?__biz=MzA4NTgwODMzNg==&amp;mid=206239928&amp;idx=1&amp;sn=e893a993b2acd15c11452ef66a4e563e#rd">
+                                        <img src="./img//btnFollowNestle.png" alt="关注雀巢"></a>
+                                    <a href="http://vip.yingjiesheng.com/2015/nestle_intern/"> <img
+                                            src="./img//btnJoin.png" alt="立即申请"></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
